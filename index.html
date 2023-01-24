@@ -6,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>YardSale: tienda</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/productList.css">
+        <link rel="stylesheet" href="css/asideCarrito.css">
+        <link rel="stylesheet" href="css/productDetail.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body >
         <nav>
             <img src="./icons/icon_menu.svg" alt="menu" class="menu">
             <div class="navbar-left">
@@ -20,7 +23,7 @@
                         <a href="/">All</a>
                     </li>
                     <li>
-                        <a href="/">Clothes</a>
+                        <a id="clothes-el" data-value="clothes" >Clothes</a>
                     </li>
                     <li>
                         <a href="/">Electronics</a>
@@ -29,7 +32,7 @@
                         <a href="/">Furnitures</a>
                     </li>
                     <li>
-                        <a href="/">Toys</a>
+                        <a id="toys-el" data-value="toys" >Toys</a>
                     </li>
                     <li>
                     <a href="/">Others</a>
@@ -38,14 +41,14 @@
             </div>
             <div class="navbar-right">
                 <ul>
-                    <li class="navbar-email">platzi@example.com</li>
+                    <li class="navbar-email" >platzi@example.com</li>
                     <li class="navbar-shopping-cart">
                         <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
                         <div>2</div>
                     </li>
                 </ul>
             </div>
-            <div class="desktop-menu inactive">
+            <div class="desktop-menu inactive flotante">
                 <ul>
                     <li>
                         <a href="/" class="title">My orders</a>
@@ -60,7 +63,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="mobile-menu inactive">
+            <div class="mobile-menu inactive flotante">
                 <ul>
                     <li>
                         <a href="/">CATEGORIES</a>
@@ -68,8 +71,8 @@
                     <li>
                         <a href="/">All</a>
                     </li>
-                    <li>
-                        <a href="/">Clothes</a>
+                    <li >
+                        <a id="clothes-mobile" data-value="clothes">Clothes</a>
                     </li>
                     <li>
                         <a href="/">Electronics</a>
@@ -78,7 +81,7 @@
                         <a href="/">Furnitures</a>
                     </li>
                     <li>
-                        <a href="/">Toys</a>
+                        <a id="toys-mobile" data-value="toys" >Toys</a>
                     </li>
                     <li>
                         <a href="/">Other</a>
@@ -103,7 +106,7 @@
                     </li>
                 </ul>
             </div>
-            <aside class="product-detail inactive">
+            <aside class="product-detail inactive flotante">
                 <div class="title-container">
                     <img src="./icons/flechita.svg" alt="arrow">
                     <p class="title">My order</p>
@@ -151,6 +154,26 @@
                 </div>
             </aside>
         </nav>
+        <section class="main-container">
+            <div class="cards-container">
+
+            </div>
+        </section>
+        <aside class="product-detail-onc inactive flotante">
+            <!-- <div class="product-detail-onc-close"> -->
+            <!--     <img src="./icons/icon_close.png" alt="close"> -->
+            <!-- </div> -->
+            <!-- <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike"> -->
+            <!-- <div class="product-info-onc"> -->
+            <!--     <p>$35,00</p> -->
+            <!--     <p>Bike</p> -->
+            <!--     <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p> -->
+            <!--     <button class="primary-button add-to-cart-button"> -->
+            <!--         <img src="./icons/bt_add_to_cart.svg" alt="add to cart"> -->
+            <!--             Add to cart -->
+            <!--     </button> -->
+            <!-- </div> -->
+        </aside>
         <script src="main.js"></script>
     </body>
 </html>
